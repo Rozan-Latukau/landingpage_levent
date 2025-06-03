@@ -1,0 +1,58 @@
+@use "colors";
+@use "fonts";
+@use "sass:map";
+
+/* The container */
+
+.payment-radio {
+    display: block;
+    position: relative;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid colors.$white;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    .checkmark {
+        position: absolute;
+        top: 5;
+        right: 25px;
+        height: 25px;
+        width: 26px;
+        border: 1px solid colors.$white;
+        background-color: transparent;
+        border-radius: 100%;
+        transition: all .3s;
+    }
+    input:checked~.checkmark {
+        background-color: transparent;
+    }
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    input:checked~.checkmark:after {
+        display: block;
+    }
+    .checkmark:after {
+        top: 3.7px;
+        left: 3.7px;
+        width: 16px;
+        height: 16px;
+        border-radius: 100%;
+        background: colors.$green;
+    }
+    .balance {
+        font-weight: map.get(fonts.$font-weight, regular);
+        font-size: 14px;
+    }
+}

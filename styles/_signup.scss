@@ -1,0 +1,22 @@
+@use "components/colors";
+.login.header {
+    height: auto;
+}
+
+.form-login {
+    background-color: colors.$white;
+    border-radius: 24px;
+    padding: 24px 24px 30px;
+    row-gap: 20px;
+    width: 100%;
+    max-width: 460px;
+    input {
+        padding: 13px 16px;
+        border-radius: 14px;
+        border: 1.5px solid colors.$navy;
+        &:focus {
+            box-shadow: none;
+            border-color: colors.$green;
+        }
+    }
+}

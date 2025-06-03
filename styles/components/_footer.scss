@@ -1,0 +1,32 @@
+@use "colors";
+@use "fonts";
+@use "sass:map";
+footer {
+    padding: 70px 0;
+    .footer-content {
+        column-gap: 150px;
+        row-gap: 48px;
+        .footer-links {
+            font-size: 16px;
+            .title-links {
+                font-weight: map.get(fonts.$font-weight, medium);
+                color: colors.$white;
+            }
+            a {
+                font-weight: map.get(fonts.$font-weight, regular);
+                color: colors.$gray;
+                transition: all 0.3s;
+                text-decoration: none;
+                margin-bottom: 8px;
+                &:hover {
+                    color: colors.$white;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .all-rights {
+        margin-top: 70px;
+        margin-bottom: 0;
+    }
+}
