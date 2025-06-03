@@ -1,3 +1,9 @@
+The notification to activate this website can be done in several ways, including:
+
+- https://github.com/Rozan-Latukau/BE_Levent.git – used for the backend
+- https://github.com/Rozan-Latukau/FE_Levent.git – used for the dashboard
+- https://github.com/Rozan-Latukau/landingpage_levent.git – used to display the main landing page of the website
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
